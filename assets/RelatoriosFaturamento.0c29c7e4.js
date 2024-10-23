@@ -1,0 +1,1 @@
+import{_ as t,o as a,d as o}from"./index.81269774.js";const e={components:{},data(){return{data:""}}},r={class:"faturamento row"};function n(s,c,_,d,p,f){return a(),o("div",r,"faturamento")}var u=t(e,[["render",n]]);export{u as default};
