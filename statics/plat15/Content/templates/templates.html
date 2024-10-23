@@ -1,0 +1,378 @@
+﻿<div id="FormTemplate">
+    <form class="main" action="" id="{NomeObjeto}">
+        <fieldset>
+            <div class="fluid">
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+<div id="GridSozinhaTemplate">
+    <div class="widget grid12" data-tipo="Grade" data-id="{CodigoSessao}">
+        <div class="whead hand opened inactive " just-adm="true">
+            <h6>{Descricao}</h6>
+            <div class="titleOpt">
+                <a name="PropriedadeGrid">
+                    <span class="icos-cog3"></span>
+                    <span class="clear"></span>
+                </a>
+            </div>
+            <div class="titleOpt">
+                <a name="BotaoSessao">
+                    <span class="icos-view"></span>
+                    <span class="clear"></span>
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+<div id="SessaoTemplate">
+    <div class="widget grid{Largura}" data-tipo="{Tipo}" data-id="{CodigoSessao}">
+        <div class="whead hand {Layout}">
+            <h6>{Descricao}</h6>
+            <div class="titleOpt" just-adm="true" just-grade="true">
+                <a name="PropriedadeGrid">
+                    <span class="icos-cog3"></span>
+                    <span class="clear"></span>
+                </a>
+            </div>
+            <div class="titleOpt" just-adm="true" just-campo="true">
+                <a name="BotaoComponente">
+                    <span class="icos-cog3"></span>
+                    <span class="clear"></span>
+                </a>
+            </div>
+            <div class="titleOpt" just-adm="true">
+                <a name="BotaoSessao">
+                    <span class="icos-view"></span>
+                    <span class="clear"></span>
+                </a>
+            </div>
+            <div class="titleOpt" just-grafico="true">
+                <a name="BotaoRefreshGrafico" title="Atualiza">
+                    <span class="icos-refresh4"></span>
+                    <span class="clear"></span>
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="body" name="sessao_{CodigoSessao}" style="{Estilo}">
+        </div>
+    </div>
+</div>
+
+<div id="ContentBodyTemplate">
+    <div id="{Codigo}" ref="contentBody">
+        <div class="contentTop">
+            <span class="pageTitle">
+                <span ref="imgIcon"></span>
+                <span ref="bodyTitle"></span>
+            </span>
+            <ul class="quickStats"></ul>
+            <div class="clear"></div>
+        </div>
+        <div class="breadLine">
+            <div class="bc">
+                <ul id="breadcrumbs" class="breadcrumbs"></ul>
+            </div>
+            <div class="breadLinks">
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ContentBodyPropertiesTemplate">
+    <ul class="tabs">
+        <li><a href="#tabColunas_{Codigo}">Colunas</a></li>
+        <li><a href="#tabToolbar_{Codigo}">Botões</a></li>
+        <li><a href="#tabPropriedades_{Codigo}">Propriedades</a></li>
+    </ul>
+
+    <div id="tabPropriedadeGrid_{Codigo}" class="tab_container" style="overflow: auto;">
+        <!--//INICIO TAB COLUNAS-->
+        <div id="tabColunas_{Codigo}" class="tab_content">
+            <div class="formRow">
+                <div class="grid2"><label>Colunas:</label></div>
+                <div class="grid10">
+                    <select name="ddlColunas" tabindex="1" class="select"></select>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div name="semBotao">
+                <div class="formRow">
+                    <div class="grid2"><label>Campo</label></div>
+                    <div class="grid4"><input type="text" class="text" name="txtCampo" tabindex="1" /></div>
+                    <div class="grid2"><label>Descrição</label></div>
+                    <div class="grid4"><input type="text" class="text" name="txtDescricao" tabindex="2" /></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <div class="grid2">
+                        <label>Tipo:</label>
+                    </div>
+                    <div class="grid10">
+                        <select name="ddlTipo" tabindex="1" class="select">
+                            <option value="arquivo">Arquivo</option>
+                            <option value="checagem">Checagem</option>
+                            <option value="data">Data</option>
+                            <option value="datahora">Data e Hora</option>
+                            <option value="email">E-mail</option>
+                            <option value="foto">Foto</option>
+                            <option value="numero">Número</option>
+                            <option value="prompt">Pesquisa</option>
+                            <option value="selecao">Seleção</option>
+                            <option value="senha">Senha</option>
+                            <option value="texto">Texto</option>
+                            <option value="textolongo">Texto Longo</option>
+                            <option value="valor">Valor</option>
+                        </select>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div name="divPrompt">
+                    <div class="formRow">
+                        <div class="grid3"><label>Foreign Key</label>
+                        </div>
+                        <div class="grid9"><input type="text" class="text" name="txtCampoForeignKeyPrompt" tabindex="2"/>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div name="divDropDownOptions">
+                    <div class="formRow">
+                        <div class="grid3">
+                            <label>Opções (Ex. 0 = Texto 0, 1 = Texto 1, ...)</label>
+                        </div>
+                        <div class="grid9">
+                            <textarea name="txtDropDownOpcoes" class="text" style="width: 100%; height: 100px;"></textarea>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="grid1"><input type="checkbox" class="check" name="ckEditavel" tabindex="7" /></div>
+                    <div class="grid2"><label>Editável</label></div>
+                    <div class="grid1"><input type="checkbox" class="check" name="ckObrigatorio" tabindex="5" /></div>
+                    <div class="grid3"><label>Obrigatório</label></div>
+                    <div class="grid1"><input type="checkbox" class="check" name="ckIdentificador" tabindex="6" /></div>
+                    <div class="grid4"><label>Identificador</label></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <div class="grid1"><input type="checkbox" class="check" name="ckVisivel" tabindex="8" /></div>
+                    <div class="grid2"><label>Visível</label></div>
+                    <div class="grid1"><input type="checkbox" class="check" name="ckFiltraColuna" tabindex="6" /></div>
+                    <div class="grid3"><label>Habilita Filtro</label></div>
+                    <div class="grid1"><input type="checkbox" class="check" name="ckOrdenaColuna" tabindex="5" /></div>
+                    <div class="grid4"><label>Habilita Ordenação</label></div>
+                    <span class="clear"></span>
+                </div>
+                <div class="formRow">
+                    <div class="grid1"><input type="checkbox" class="check" name="ckGravaNoBanco" tabindex="8" /></div>
+                    <div class="grid2"><label>Grava no BD</label></div>
+                    <div class="grid1"><input type="checkbox" class="check" name="ckLeDoBanco" tabindex="6" /></div>
+                    <div class="grid3"><label>Lê do BD</label></div>
+                    <div class="grid1"><input type="checkbox" class="check" name="ckAgrupaColuna" tabindex="8"/></div>
+                    <div class="grid4"><label>Habilita Agrupamento</label>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <div class="grid1">
+                        <input type="checkbox" class="check" name="ckBotao" tabindex="6" />
+                    </div>
+                    <div class="grid10">
+                        <label>Tem botão</label>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div name="comBotao">
+                    <div class="formRow">
+                        <div class="grid3">
+                            <label>Texto do Botão</label>
+                        </div>
+                        <div class="grid9">
+                            <input type="text" class="text" name="txtTexto" tabindex="2" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="grid1"><input type="checkbox" class="check" name="ckCondicao" tabindex="6" /></div>
+                    <div class="grid10"><label>Tem condição</label></div>
+                    <div class="clear"></div>
+                </div>
+                <div name="divCondicao">
+                    <div class="formRow">
+                        <div class="grid3">
+                            <select name="ddlCondicao" tabindex="1" class="select">
+                                <option value="MaiorIgual">Maior ou Igual</option>
+                                <option value="Maior">Maior</option>
+                                <option value="Igual">Igual</option>
+                                <option value="Menor">Menor</option>
+                                <option value="MenorIgual">MenorIgual</option>
+                                <option value="Diferente">Diferente</option>
+                            </select>
+                        </div>
+                        <div class="grid9">
+                            <input type="text" class="text" name="txtCondicao" tabindex="1" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3">
+                            <label>Cor Background</label>
+                        </div>
+                        <div class="grid9">
+                            <input type="text" class="text" maxlength="6" name="txtCorBg" tabindex="1" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3">
+                            <label>Cor Fonte</label>
+                        </div>
+                        <div class="grid9">
+                            <input type="text" class="text" maxlength="6" name="txtCorFonte" tabindex="1" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="grid3">
+                            <label>Imagem</label>
+                        </div>
+                        <div class="grid9">
+                            <input type="text" class="text" name="txtImagem" tabindex="6" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIM TAB COLUNAS-->
+        <!--INICIO TAB BOTÃO-->
+        <div id="tabToolbar_{Codigo}" class="tab_content">
+            <div class="formRow">
+                <div class="grid2">
+                    <label>Toolbar:</label>
+                </div>
+                <div class="grid2">
+                    <a href="#" title="Inserir Novo Botão" class="buttonM bDefault ml10" name="btnNovoBotao"><span class="icon-plus-2"></span></a>
+                </div>
+                <div class="grid6">
+                    <select name="ddlBotoes" tabindex="1" class="select"></select>
+                </div>
+                <div class="grid2">
+                    <a href="#" title="Excluir Botão" class="buttonM bDefault ml10" name="btnExcluirBotao"><span class="icon-remove-2"></span></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div name="toolbarSelecionado">
+                <div class="formRow">
+                    <div class="grid3"><label>Id</label></div>
+                    <div class="grid9"><input type="text" class="text" name="txtId" tabindex="2" /></div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="formRow">
+                    <div class="grid3"><label>Classe</label></div>
+                    <div class="grid9"><input type="text" class="text" name="txtClasse" tabindex="3" /></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <div class="grid3">
+                        <label>Função</label>
+                    </div>
+                    <div class="grid9">
+                        <input type="text" class="text" name="txtToFuncao" tabindex="3" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--FIM TAB BOTÃO-->
+        <!--INICIO TAB PROPRIEDADES-->
+        <div id="tabPropriedades_{Codigo}" class="tab_content">
+            <div class="formRow">
+                <div class="grid1"><input type="checkbox" class="check" name="ckIncluir" tabindex="9" /></div>
+                <div class="grid2"><label>Incluir</label></div>
+                <div class="grid1"><input type="checkbox" class="check" name="ckExcel" tabindex="10" /></div>
+                <div class="grid3"><label>Exportar Excel</label></div>
+                <div class="grid1"><input type="checkbox" class="check" name="ckAgrupaGrade" tabindex="10" /></div>
+                <div class="grid4"><label>Habilita Agrupamento</label></div>
+                <div class="clear"></div>
+            </div>
+            <div class="formRow">
+                <div class="grid1"><input type="checkbox" class="check" name="ckEditar" tabindex="7" /></div>
+                <div class="grid2"><label>Editar</label></div>
+                <div class="grid1"><input type="checkbox" class="check" name="ckFiltraGrade" tabindex="10" /></div>
+                <div class="grid3"><label>Habilita Filtro</label></div>
+                <div class="grid1"><input type="checkbox" class="check" name="ckOrdenaGrade" tabindex="9" /></div>
+                <div class="grid4"><label>Habilita Ordenação</label></div>
+                <div class="clear"></div>
+            </div>
+            <div class="formRow">
+                <div class="grid1"><input type="checkbox" class="check" name="ckExcluir" tabindex="8" /></div>
+                <div class="grid2"><label>Excluir</label></div>
+                <div class="grid2"><label>Tabela Master</label></div>    
+                <div class="grid7"><input type="text" class="check" name="TabelaMaster" tabindex="8" /></div>
+                <div class="clear"></div>
+            </div>
+            <div class="formRow">
+                <div class="grid12">
+                    <label>Sentença SQL</label>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="formRow">
+                <div class="grid12">
+                    <textarea name="txtSentencaSQL" class="text" style="width: 100%; height: 250px;"></textarea>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--FIM TAB PROPRIEDADES-->
+    </div>
+</div>
+
+<div id="ContentBodyAddColumns">
+    <div class="formRow">
+        <div class="grid3"><label name="lbCampo" for="txtCampoAdd">Campo</label></div>
+        <div class="grid9"><input type="text" class="validate[required]" name="txtCampoAdd" tabindex="1" /></div>
+        <div class="clear"></div>
+    </div>
+    <div class="formRow">
+        <div class="grid3"><label name="lbDescricao" for="txtDescricaoAdd">Descrição</label></div>
+        <div class="grid9"><input type="text" class="validate[required]" name="txtDescricaoAdd" tabindex="2" /></div>
+        <div class="clear"></div>
+    </div>
+    <div class="formRow">
+        <div class="grid3"><label>Botão</label></div>
+        <div class="grid9"><input type="checkbox" class="check" name="ckBotao" tabindex="6" /></div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div id="ContentBodyAddButton">
+    <div class="formRow">
+        <div class="grid3"><label>Id</label></div>
+        <div class="grid9"><input type="text" class="validate[required]" name="txtIdAdd" tabindex="1" /></div>
+        <div class="clear"></div>
+    </div>
+    <div class="formRow">
+        <div class="grid3"><label>Classe</label></div>
+        <div class="grid9"><input type="text" class="validate[required]" name="txtClasseAdd" tabindex="2" /></div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+

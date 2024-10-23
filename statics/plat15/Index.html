@@ -1,0 +1,717 @@
+﻿<!DOCTYPE HTML
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta Http-Equiv="Cache-Control" Content="no-cache">
+    <meta Http-Equiv="Pragma" Content="no-cache">
+    <meta Http-Equiv="Expires" Content="0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Geeks</title>
+
+    <!--<link rel="stylesheet" type="text/css" href="Content/Plugins/jsgrid/css/jsgrid.css" />
+	<link rel="stylesheet" type="text/css" href="Content/Plugins/jsgrid/css/jsgrid-theme.css" /> -->
+    <link href="Content/Geeks/Css/jquery.bootgrid.css" rel="stylesheet" type="text/css" />
+
+    <link href="Content/Plugins/Aquincum/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Plugins/jquery.alerts/Css/jquery.alerts.css" rel="stylesheet" />
+
+    <link href="Content/Plugins/kendo/kendo.common.min.css" rel="stylesheet" />
+    <link href="Content/Plugins/kendo/kendo.dataviz.silver.min.css" rel="stylesheet" />
+    <link href="Content/Plugins/kendo/kendo.rtl.min.css" rel="stylesheet" />
+    <link href="Content/Plugins/kendo/kendo.silver.min.css" rel="stylesheet" />
+    <link href="Content/Plugins/kendo/kendo.silver.mobile.min.css" rel="stylesheet" />
+
+    <link href="Content/Geeks/Css/styles.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons&display=swap" rel="stylesheet">
+
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/jquery.sticky.js"></script>
+
+    <script src="Scripts/jquery-ui-1.8.24.min.js"></script>
+    <script src="Scripts/jquery-migrate-1.2.1.js"></script>
+    <script src="Content/Plugins/jquery.alerts/Js/jquery.alerts.js"></script>
+
+    <script src="Scripts/jquery.cookie.js"></script>
+    <script src="Content/Plugins/Aquincum/js/files/bootstrap.js"></script>
+
+    <script type="text/javascript" src="Content/Plugins/Aquincum/js/plugins/forms/jquery.tagsinput.min.js"></script>
+
+    <!--<script src="/Content/Plugins/Aquincum/js/boot/forms/ui.spinner.js"></script>-->
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.mousewheel.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/charts/excanvas.min.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/charts/jquery.flot.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/charts/jquery.flot.orderBars.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/charts/jquery.flot.pie.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/charts/jquery.flot.resize.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/charts/jquery.sparkline.min.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/tables/jquery.dataTables.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/tables/jquery.sortable.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/tables/jquery.resizable.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/autogrowtextarea.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.uniform.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.inputlimiter.min.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.tagsinput.min.js"></script>
+    <!--<script src="Content/Plugins/Aquincum/js/boot/forms/jquery.maskedinput.min.js"></script>-->
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.autotab.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.chosen.min.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.dualListBox.js"></script>
+    <script src="Content/Plugins/cleditor/jquery.cleditor.js"></script>
+    <script src="Content/Plugins/cleditor/jquery.cleditor.table.min.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.ibutton.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.validationEngine-en.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/forms/jquery.validationEngine.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/uploader/plupload.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/uploader/plupload.html4.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/uploader/plupload.html5.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/uploader/jquery.plupload.queue.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/wizards/jquery.form.wizard.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/wizards/jquery.validate.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/wizards/jquery.form.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.collapsible.min.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.breadcrumbs.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.tipsy.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.progress.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.timeentry.min.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.colorpicker.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.jgrowl.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.fancybox.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.fileTree.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.sourcerer.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/others/jquery.fullcalendar.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/others/jquery.elfinder.js"></script>
+    <script src="Content/Plugins/Aquincum/js/plugins/ui/jquery.easytabs.min.js"></script>
+    <script src="Content/Plugins/kendo/jszip.min.js"></script>
+    <script src="Content/Plugins/kendo/kendo.all.min.js"></script>
+    <!--<script src="Content/Plugins/kendo/kendo.all.js"></script>-->
+    <script src="Scripts/jquery.dateformat.js"></script>
+
+    <script src="Scripts/pollyfill.js"></script>
+    <script src="Scripts/codigobarras.js"></script>
+    <script src="Scripts/validadocumento.js"></script>
+    <script src="Scripts/number_format.js"></script>
+    <script src="Scripts/jquery.ui.numeric.js"></script>
+    <script src="Scripts/jquery.maskMoney.js"></script>
+    <script src="Scripts/autoNumeric.js"> </script>
+    <script src="Scripts/jquery.maskedinput-1.3.min.js"></script>
+
+    <script src="Scripts/jquery.inputmask.bundle.js"></script>
+
+    <script src="Content/Plugins/kendo/kendo.culture.pt-BR.js"></script>
+    <script src="Content/Plugins/kendo/kendo.pt-BR.js"></script>
+    <script src="Content/Plugins/kendo/kendo.timezones.min.js"></script>
+
+    <script src="Restricted/Geeks.ERP.Config.js"></script>
+    <script src="Scripts/PublicScripts.js"></script>
+    <script src="Scripts/paper-full.js"></script>
+    <script src="Restricted/Geeks.ERP.Namespaces.js"></script>
+    <script src="Restricted/Geeks.Async.Core.js"></script>
+    <script src="Restricted/Geeks.Async.UI.Tela.js"></script>
+
+    <script src="Restricted/Geeks.ERP.Core.js"></script>
+    <script src="Restricted/Geeks.ERP.UI.Template.js"></script>
+    <!-- <script src="Restricted/Geeks.ERP.UI.Menu.js"></script> -->
+    <script src="Restricted/Geeks.ERP.UI.Tela.js"></script>
+    <script src="Restricted/Geeks.ERP.UI.Prompt.js"></script>
+    <script src="Restricted/Geeks.ERP.UI.PromptTexto.js"></script>
+    <script src="Restricted/Geeks.ERP.UI.FileManager.js"></script>
+    <script src="Restricted/Geeks.ERP.UI.Grid.js"></script>
+    <script src="Restricted/Geeks.ERP.DataSource.js"></script>
+    <script src="Restricted/Geeks.ERP.js"></script>
+    <script src="Restricted/MD5.js"></script>
+
+    <script src="Content/Plugins/ckeditor/ckeditor.js"></script>
+    <script src="Content/Plugins/ckeditor/adapters/jquery.js"></script>
+
+    <!-- <script src="https://api.b15.com.br:444/socket.io/socket.io.js"></script> -->
+
+    <style>
+        .dropZoneElement {
+            position: relative;
+            display: inline-block;
+            background-color: #f8f8f8;
+            border: 1px solid #c7c7c7;
+            width: 230px;
+            height: 110px;
+            text-align: center;
+        }
+
+        .textWrapperPreview {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            font-size: 24px;
+            line-height: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+        }
+
+        .dropImageHereText {
+            color: #c7c7c7;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .imagesPreview {
+            float: left;
+            position: relative;
+            margin: 0 10px 10px 0;
+            padding: 0;
+        }
+
+        .imagesPreview img {
+            width: 60px;
+        }
+
+        .wrapperPreview:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="hidden" name="hfObjeto" id="hfObjeto" value="" />
+    <input type="hidden" name="hfNome" id="hfNome" value="" />
+    <input type="hidden" name="hfCodigoUsuario" id="hfCodigoUsuario" value="" />
+    <input type="hidden" name="hfCodigoSistema" id="hfCodigoSistema" value="1" />
+    <input type="hidden" name="hfCodigoClienteSistema" id="hfCodigoSistema" value="1" />
+    <input type="hidden" name="hfUsuarioAdm" id="hfUsuarioAdm" value="" />
+    <input type="hidden" name="hfGrupoInterno" id="hfGrupoInterno" value="" />
+
+    <!-- Content begins -->
+    <div id="content">
+    </div>
+    <!-- Content ends -->
+
+    <script type="templates" id="Templates">
+
+        <div id="FormTemplate">
+                <form class="main" action="" id="{NomeObjeto}">
+                    <fieldset>
+                        <div class="fluid">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+
+            <div id="GridSozinhaTemplate">
+                <div class="widget grid12" data-tipo="Grade" data-id="{CodigoSessao}">
+                    <div class="whead hand opened inactive " just-adm="true">
+                        <h6>{Descricao}</h6>
+                        <div class="titleOpt">
+                            <a name="PropriedadeGrid" title="Propriedades da Grade">
+                                <span class="icos-cog3"></span>
+                                <span class="clear"></span>
+                            </a>
+                        </div>
+                        <div class="titleOpt">
+                            <a name="BotaoSessao" title="Propriedades da Sessão">
+                                <span class="icos-view"></span>
+                                <span class="clear"></span>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="SessaoTemplate">
+                <div class="widget grid{Largura}" data-tipo="{Tipo}" data-id="{CodigoSessao}" style="float: {Alinhamento}">
+                    <div class="whead hand {Layout}">
+                        <h6>{Descricao}</h6>
+                        <div class="titleOpt" just-adm="true" just-grade="true">
+                            <a name="PropriedadeGrid" title="Propriedades da Grade">
+                                <span class="icos-cog3"></span>
+                                <span class="clear"></span>
+                            </a>
+                        </div>
+                        <div class="titleOpt" just-adm="true" just-campo="true">
+                            <a name="BotaoComponente" title="Campos da Sessão">
+                                <span class="icos-cog3"></span>
+                                <span class="clear"></span>
+                            </a>
+                        </div>
+                        <div class="titleOpt" just-adm="true">
+                            <a name="BotaoSessao" title="Propriedades da Sessão">
+                                <span class="icos-view"></span>
+                                <span class="clear"></span>
+                            </a>
+                        </div>
+                        <div class="titleOpt" just-grafico="true">
+                            <a name="BotaoRefreshGrafico" title="Atualiza">
+                                <span class="icos-refresh4"></span>
+                                <span class="clear"></span>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="body" name="sessao_{CodigoSessao}" style="{Estilo}">
+                    </div>
+                </div>
+            </div>
+
+            <div id="ContentBodyTemplate">
+                <div id="{Codigo}" ref="contentBody">
+                    <div class="contentTop">
+                        <span class="pageTitle">
+                            <span ref="imgIcon"></span>
+                            <span ref="bodyTitle"></span>
+                        </span>
+                        <ul class="quickStats"></ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="breadLine">
+                        <div class="bc">
+                            <ul id="breadcrumbs" class="breadcrumbs"></ul>
+                        </div>
+                        <div class="breadLinks">
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div id="PromptSearchTemplate">
+				<div id="grid-data-api-header" class="bootgrid-header container-fluid">
+					<div class="col-sm-12 actionBar">
+						<div class="actions btn-group">
+							<button id="btnPromptProcurar" class="btn btn-default" type="button" title="Procurar" style="height:47px;width:55px;">
+								<span class="icon glyphicon glyphicon-search" style="width:100%;"></span>
+							</button>
+							<div class="btn-group">
+								<input id="promptInput" type="text" style="height:47px;" size=50>
+							</div>
+						</div>
+						<div class="actions btn-group">
+							<div class="dropdown btn-group">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="height:47px;width:55px;">
+									<span class="dropdown-text" id="promptDropdownText">25</span> <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu pull-right" role="menu">
+									<li aria-selected="true" id="promptItem" class="active">
+										<a data-action="25" class="dropdown-item dropdown-item-button" style="width:75%">25</a>
+									</li>
+									<li aria-selected="false" id="promptItem">
+										<a data-action="100" class="dropdown-item dropdown-item-button" style="width:75%">100</a>
+									</li>
+									<li aria-selected="false" id="promptItem">
+										<a data-action="500" class="dropdown-item dropdown-item-button" style="width:75%">500</a>
+									</li>
+									<li aria-selected="false" id="promptItem">
+										<a data-action="-1" class="dropdown-item dropdown-item-button" style="width:75%">Todos</a>
+									</li>
+								</ul>
+							</div>
+							<div class="dropdown btn-group">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="height:47px;width:55px;">
+									<span class="dropdown-text">
+										<span class="icon glyphicon glyphicon-th-list"></span>
+									</span>
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu pull-right" role="menu" id="promptColunas">
+									<!-- preenche dinamicamente -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <div id="ContentBodyPropertiesTemplate">
+                <ul class="tabs">
+                    <li><a href="#tabColunas_{Codigo}">Colunas</a></li>
+                    <li><a href="#tabToolbar_{Codigo}">Botões</a></li>
+                    <li><a href="#tabPropriedades_{Codigo}">Propriedades</a></li>
+                </ul>
+
+                <div id="tabPropriedadeGrid_{Codigo}" class="tab_container" style="overflow: auto;">
+                    <!--//INICIO TAB COLUNAS-->
+                    <div id="tabColunas_{Codigo}" class="tab_content">
+                        <div class="formRow">
+                            <div class="grid2"><label>Colunas:</label></div>
+                            <div class="grid10">
+                                <select name="ddlColunas" tabindex="1" class="select"></select>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div name="semBotao">
+                            <div class="formRow">
+                                <div class="grid2">
+                                    <label>Campo</label>
+                                </div>
+                                <div class="grid4">
+                                    <input type="text" class="text" name="txtCampo" tabindex="1" />
+                                </div>
+                                <div class="grid2">
+                                    <label>Descrição</label>
+                                </div>
+                                <div class="grid4">
+                                    <input type="text" class="text" name="txtDescricao" tabindex="2" />
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid2">
+                                    <label>Template</label>
+                                </div>
+                                <div class="grid10">
+                                    <input type="text" class="text" name="txtTemplate" tabindex="2" />
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid2">
+                                    <label>Tipo:</label>
+                                </div>
+                                <div class="grid10">
+                                    <select name="ddlTipo" tabindex="1" class="select">
+                                        <option value="arquivo">Arquivo</option>
+                                        <option value="checagem">Checagem</option>
+                                        <option value="data">Data</option>
+                                        <option value="datahora">Data e Hora</option>
+                                        <option value="email">E-mail</option>
+                                        <option value="foto">Foto</option>
+                                        <option value="numero">Número</option>
+                                        <option value="prompt">Pesquisa</option>
+                                        <option value="selecao">Seleção</option>
+                                        <option value="senha">Senha</option>
+                                        <option value="texto">Texto</option>
+                                        <option value="textolongo">Texto Longo</option>
+                                        <option value="editorhtml">Texto Html</option>
+                                        <option value="valor">Valor</option>
+										<option value="valor4">Valor4</option>
+										<option value="imagem">Imagem</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid2">
+                                    <label>Alinhamento:</label>
+                                </div>
+                                <div class="grid10">
+                                    <select name="ddlAlinhamento" tabindex="1" class="select">
+                                        <option value="auto">Automático</option>
+                                        <option value="left">Esquerda</option>
+                                        <option value="right">Direita</option>
+                                        <option value="center">Centro</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div name="divPrompt">
+                                <div class="formRow">
+                                    <div class="grid2">
+                                        <label>Foreign Key</label>
+                                    </div>
+                                    <div class="grid10">
+                                        <input type="text" class="text" name="txtCampoForeignKeyPrompt" tabindex="2" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div name="divDropDownOptions">
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <label>Opções (Ex. 0 = Texto 0, 1 = Texto 1, ...)</label>
+                                    </div>
+                                    <div class="grid9">
+                                        <textarea name="txtDropDownOpcoes" class="text" style="width: 100%; height: 100px;"></textarea>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid1"><input type="checkbox" class="check" name="ckEditavel" tabindex="7" /></div>
+                                <div class="grid2"><label>Editável</label></div>
+                                <div class="grid1"><input type="checkbox" class="check" name="ckObrigatorio" tabindex="5" /></div>
+                                <div class="grid3"><label>Obrigatório</label></div>
+                                <div class="grid1"><input type="checkbox" class="check" name="ckIdentificador" tabindex="6" /></div>
+                                <div class="grid4"><label>Identificador</label></div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid1"><input type="checkbox" class="check" name="ckVisivel" tabindex="8" /></div>
+                                <div class="grid2"><label>Visível</label></div>
+                                <div class="grid1"><input type="checkbox" class="check" name="ckFiltraColuna" tabindex="6" /></div>
+                                <div class="grid3"><label>Habilita Filtro</label></div>
+                                <div class="grid1"><input type="checkbox" class="check" name="ckOrdenaColuna" tabindex="5" /></div>
+                                <div class="grid4"><label>Habilita Ordenação</label></div>
+                                <span class="clear"></span>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid1"><input type="checkbox" class="check" name="ckGravaNoBanco" tabindex="8" /></div>
+                                <div class="grid2"><label>Grava no BD</label></div>
+                                <div class="grid1"><input type="checkbox" class="check" name="ckLeDoBanco" tabindex="6" /></div>
+                                <div class="grid3"><label>Lê do BD</label></div>
+                                <div class="grid1"><input type="checkbox" class="check" name="ckAgrupaColuna" tabindex="8" /></div>
+                                <div class="grid4">
+                                    <label>Habilita Agrupamento</label>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid1">
+                                    <input type="checkbox" class="check" name="ckBotao" tabindex="6" />
+                                </div>
+                                <div class="grid10">
+                                    <label>Tem Botão</label>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div name="comBotao">
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <label>Texto do Botão</label>
+                                    </div>
+                                    <div class="grid9">
+                                        <input type="text" class="text" name="txtTexto" tabindex="2" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid1"><input type="checkbox" class="check" name="ckCondicao" tabindex="6" /></div>
+                                <div class="grid10"><label>Habilita Condição</label></div>
+                                <div class="clear"></div>
+                            </div>
+                            <div name="divCondicao">
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <select name="ddlCondicao" tabindex="1" class="select">
+                                            <option value="MaiorIgual">Maior ou Igual</option>
+                                            <option value="Maior">Maior</option>
+                                            <option value="Igual">Igual</option>
+                                            <option value="Menor">Menor</option>
+                                            <option value="MenorIgual">MenorIgual</option>
+                                            <option value="Diferente">Diferente</option>
+                                        </select>
+                                    </div>
+                                    <div class="grid9">
+                                        <input type="text" class="text" name="txtCondicao" tabindex="1" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <label>Cor Background</label>
+                                    </div>
+                                    <div class="grid9">
+                                        <input type="text" class="text" maxlength="6" name="txtCorBg" tabindex="1" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <label>Cor Fonte</label>
+                                    </div>
+                                    <div class="grid9">
+                                        <input type="text" class="text" maxlength="6" name="txtCorFonte" tabindex="1" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <label>Imagem</label>
+                                    </div>
+                                    <div class="grid9">
+                                        <input type="text" class="text" name="txtImagem" tabindex="6" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="grid1"><input type="checkbox" class="check" name="ckSumarizacao" tabindex="6" /></div>
+                                <div class="grid10"><label>Habilita Sumarização</label></div>
+                                <div class="clear"></div>
+                            </div>
+                            <div name="comSumarizacao">
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <label>Sumariza no Grupo</label>
+                                    </div>
+                                    <div class="grid3">
+                                        <input type="checkbox" class="check" name="ckSumarizaNoGrupo" tabindex="6" />
+                                    </div>
+                                    <div class="grid3">
+                                        <label>Sumariza no Rodapé</label>
+                                    </div>
+                                    <div class="grid3">
+                                        <input type="checkbox" class="check" name="ckSumarizaNoRodape" tabindex="6" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <label>Operação da Sumarização</label>
+                                    </div>
+                                    <div class="grid9">
+                                        <select name="ddlOperacaoSumarizacao" tabindex="1" class="select">
+                                            <option value="sum">Somar</option>
+                                            <option value="count">Contar</option>
+                                            <option value="average">Média</option>
+                                            <option value="min">Mínimo</option>
+                                            <option value="max">Máximo</option>
+                                        </select>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="grid3">
+                                        <label>Template da Sumarização</label>
+                                    </div>
+                                    <div class="grid9">
+                                        <input type="text" class="text" name="txtTemplateSumarizacao" tabindex="2" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM TAB COLUNAS-->
+                    <!--INICIO TAB BOTÃO-->
+                    <div id="tabToolbar_{Codigo}" class="tab_content">
+                        <div class="formRow">
+                            <div class="grid2">
+                                <label>Toolbar:</label>
+                            </div>
+                            <div class="grid2">
+                                <a href="#" title="Inserir Novo Botão" class="buttonM bDefault ml10" name="btnNovoBotao"><span class="icon-plus-2"></span></a>
+                            </div>
+                            <div class="grid6">
+                                <select name="ddlBotoes" tabindex="1" class="select"></select>
+                            </div>
+                            <div class="grid2">
+                                <a href="#" title="Excluir Botão" class="buttonM bDefault ml10" name="btnExcluirBotao"><span class="icon-remove-2"></span></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div name="toolbarSelecionado">
+                            <div class="formRow">
+                                <div class="grid3"><label>Id</label></div>
+                                <div class="grid9"><input type="text" class="text" name="txtId" tabindex="2" /></div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="formRow">
+                                <div class="grid3"><label>Classe</label></div>
+                                <div class="grid9"><input type="text" class="text" name="txtClasse" tabindex="3" /></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM TAB BOTÃO-->
+                    <!--INICIO TAB PROPRIEDADES-->
+                    <div id="tabPropriedades_{Codigo}" class="tab_content">
+                        <div class="formRow">
+                            <div class="grid1"><label>Nome</label></div>
+                            <div class="grid11"><input type="text" name="txtDescricaoGrade" tabindex="8" /></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="formRow">
+                            <div class="grid1"><input type="checkbox" class="check" name="ckIncluir" tabindex="9" /></div>
+                            <div class="grid2"><label>Incluir</label></div>
+                            <div class="grid1"><input type="checkbox" class="check" name="ckExcel" tabindex="10" /></div>
+                            <div class="grid3"><label>Exportar Excel</label></div>
+                            <div class="grid1"><input type="checkbox" class="check" name="ckAgrupaGrade" tabindex="10" /></div>
+                            <div class="grid4"><label>Habilita Agrupamento</label></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="formRow">
+                            <div class="grid1"><input type="checkbox" class="check" name="ckEditar" tabindex="7" /></div>
+                            <div class="grid2"><label>Editar</label></div>
+                            <div class="grid1"><input type="checkbox" class="check" name="ckFiltraGrade" tabindex="10" /></div>
+                            <div class="grid3"><label>Habilita Filtro</label></div>
+                            <div class="grid1"><input type="checkbox" class="check" name="ckOrdenaGrade" tabindex="9" /></div>
+                            <div class="grid4"><label>Habilita Ordenação</label></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="formRow">
+                            <div class="grid1"><input type="checkbox" class="check" name="ckExcluir" tabindex="8" /></div>
+                            <div class="grid2"><label>Excluir</label></div>
+                            <div class="grid1"><input type="checkbox" class="check" name="ckMinimizarLinhas" tabindex="8" /></div>
+                            <div class="grid3"><label>Exp. / Minim. Linhas</label></div>
+                            <div class="grid1"><input type="checkbox" class="check" name="ckPaginacao" tabindex="9" /></div>
+                            <div class="grid4"><label>Habilita Paginação</label></div>
+                            <div class="clear"></div>
+                        </div>
+						<div class="formRow">
+                            <div class="grid1"><input type="checkbox" class="check" name="ckMultiRow" tabindex="8" /></div>
+                            <div class="grid2"><label>MultiRow</label></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="formRow">
+                            <div class="grid2"><label>Tabela Master</label></div>
+                            <div class="grid4"><input type="text" name="TabelaMaster" tabindex="8" /></div>
+                            <div class="grid2"><label>Foreign Key</label></div>
+                            <div class="grid4"><input type="text" name="ForeignKeyName" tabindex="8" /></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="formRow">
+                            <div class="grid12">
+                                <label>Sentença SQL</label>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="formRow">
+                            <div class="grid12">
+                                <textarea name="txtSentencaSQL" class="text" style="width: 100%; height: 188px;"></textarea>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!--FIM TAB PROPRIEDADES-->
+                </div>
+            </div>
+
+            <div id="ContentBodyAddColumns">
+                <div class="formRow">
+                    <div class="grid3"><label name="lbCampo" for="txtCampoAdd">Campo</label></div>
+                    <div class="grid9"><input type="text" class="validate[required]" name="txtCampoAdd" tabindex="1" /></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <div class="grid3"><label name="lbDescricao" for="txtDescricaoAdd">Descrição</label></div>
+                    <div class="grid9"><input type="text" class="validate[required]" name="txtDescricaoAdd" tabindex="2" /></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <div class="grid3"><label>Botão</label></div>
+                    <div class="grid9"><input type="checkbox" class="check" name="ckBotao" tabindex="6" /></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="ContentBodyAddButton">
+                <div class="formRow">
+                    <div class="grid3"><label>Id</label></div>
+                    <div class="grid9"><input type="text" class="validate[required]" name="txtIdAdd" tabindex="1" /></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="formRow">
+                    <div class="grid3"><label>Classe</label></div>
+                    <div class="grid9"><input type="text" class="validate[required]" name="txtClasseAdd" tabindex="2" /></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+    </script>
+</body>
+
+</html>

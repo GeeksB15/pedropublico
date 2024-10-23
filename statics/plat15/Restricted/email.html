@@ -1,0 +1,92 @@
+	<style type="text/css">
+
+		#emailCorpo {
+			font-family: Arial, sans-serif;
+			width: 380px;
+			resize:none;
+		}
+
+		#btnEnviarEmail {
+			position: relative;
+			float: right;
+			background-color: #000;
+			color: #FFF;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			padding: 15px;
+			margin: 15px;
+			border-radius: 5px;
+			cursor: default;
+		}
+
+		#btnEnviarEmail:hover {
+			background-color: #5A8CCE;
+		}
+
+		#dadosEmail {
+			position: relative;
+			float: right;
+			background-color: #000;
+			color: #FFF;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			padding: 15px;
+			border-radius: 5px;
+			margin-top: 80px;
+			margin-right: -210px;
+			display: none;
+		}
+
+		#btnEnviar {
+			padding: 10px;
+			text-align: center;
+			background-color: #777B80;
+			cursor: default;
+		}
+
+		#btnEnviar:hover {
+			background-color: #5A8CCE;
+		}
+
+		input {
+			border: none;
+			height: 30px;
+		}
+
+		select {
+			border: none;
+			height: 30px;
+			width: 99%;
+		}
+
+	</style>
+
+	<style type="text/css" media="print">
+
+		#btnEnviarEmail, #dadosEmail {
+			display: none;
+		}
+		
+	</style>
+
+	<div id="btnEnviarEmail">Enviar por e-mail</div>
+
+	<div id="dadosEmail">
+
+		<p>Remetente</p>
+		<select id="emailRemetente">
+			<option value=""> -- Selecione um remetente --</option>
+		</select> <br>
+		<p>Destinatário</p>
+		<input type="text" size="50" id="emailDestinatario"></input> <br>
+		<p>Cc</p>
+		<input type="text" size="50" id="emailCc"></input> <br>
+		<p>Cco</p>
+		<input type="text" size="50" id="emailCco"></input> <br>
+		<p>Assunto</p>
+		<input type="text" size="50" id="emailAssunto"></input> <br>
+		<p>Corpo do e-mail</p>
+		<textarea rows="5" id="emailCorpo"></textarea><br>
+		<p id="btnEnviar">Enviar</p>
+
+	</div>

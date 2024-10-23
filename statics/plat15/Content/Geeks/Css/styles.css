@@ -1,0 +1,487 @@
+﻿/* Estilos Gerais */
+:root {
+  --geeks-primary: #003fff;
+
+  --geeks-lightPrimary: #003fff;
+  --geeks-darkPrimary: #0a1f5c;
+
+  /* linear-gradient(90deg, #003fff, #0a1f5c) !important; */
+
+  --geeks-gray: #cccccc;
+  --geeks-lightGray: #eeeeee;
+  --geeks-darkGray: #777777;
+
+  --geeks-radius: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Login */
+body.login {
+  background: var(--geeks-primary) url("../Images/login-background.jpg") center
+    center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.loginLogo {
+  display: inline-block;
+  height: 50px;
+  margin-bottom: 48px;
+}
+
+.loginLabel {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+/* NAVBAR */
+.menuToggler {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  color: var(--geeks-primary);
+  padding: 0;
+  margin-right: 20px;
+}
+
+.menuToggler i {
+  font-size: 20px;
+}
+
+#logoSistema {
+  height: 30px;
+}
+
+/* Kendo */
+[data-tipo="Grade"] .whead {
+  border-bottom: none;
+}
+
+/* .k-button {
+  background: #fcfcfc;
+} */
+
+a:active {
+  background-color: white !important;
+}
+
+.bBlue {
+  color: white;
+}
+
+.k-grid-header {
+  margin-left: 0 !important;
+}
+
+.k-upload {
+  background-color: white !important;
+}
+
+.formRow {
+  padding: 9px 10px 0px 0px !important;
+}
+
+/* .whead .body {
+  overflow: hidden !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+} */
+
+/* .k-grid-content {
+  overflow: hidden !important;
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+} */
+
+.body {
+  margin-bottom: 8px !important;
+}
+
+.k-grid {
+  margin-left: 8px !important;
+  padding-right: 17px !important;
+}
+
+.k-header,
+.k-grid-header-wrap,
+.k-grid-footer,
+.k-grid-footer-wrap,
+.k-pager-wrap,
+.k-grid-content {
+  margin: 0 !important;
+  /* padding-right: 17px; */
+}
+
+.k-widget {
+  border-color: var(--geeks-gray);
+  border-width: 0;
+}
+
+.k-header {
+  background: var(--geeks-lightGray);
+}
+
+.k-grid-toolbar,
+.k-grid-content {
+  background-color: white;
+}
+
+.k-pager-nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.k-state-selected {
+  background: var(--geeks-primary) !important;
+  box-shadow: none;
+}
+
+/* BOOTSTRAP */
+.btn-default {
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.buttonFull {
+  display: block;
+  width: 100%;
+}
+
+/* UI */
+.ui-dialog .contentTop {
+  height: auto;
+  padding: 0 20px;
+}
+
+.ui-dialog .pageTitle {
+  margin: 0;
+}
+
+/* body.login .bWhite {
+  font-size: 20px;
+}
+
+.bWhite {
+  cursor: pointer;
+  border-radius: 3px;
+} */
+
+/* Estilos para Treeview */
+
+.k-minus ~ .k-in .folder {
+  background: url("../Images/folder-open.gif") no-repeat;
+  background-position-y: 1px;
+}
+
+.k-plus ~ .k-in .folder {
+  background: url("../Images/folder.gif") no-repeat;
+  background-position-y: 1px;
+}
+
+.k-in .item {
+  background: url("../Images/leaf.gif") no-repeat;
+  background-position-y: 1px;
+  cursor: pointer;
+}
+
+.k-in {
+  cursor: pointer !important;
+}
+
+.k-in span {
+  width: 22px;
+  height: 16px;
+  display: inline-block;
+}
+
+/* Estilos para os botões do editor de código */
+
+.MenuBotoesCodeEdit li {
+  height: 28px;
+  line-height: 22px;
+}
+
+/* Estilos para os botões do toolbar da grade */
+
+.k-grid-toolbar a {
+  width: 40px !important;
+}
+
+.k-grid-content-expander {
+  margin-left: 0px !important;
+  width: 100% !important;
+}
+
+/* Estilos para a página de dialog */
+
+.ui-dialog-content[ref="contentBody"] {
+  padding: 0px !important;
+}
+
+.ui-dialog input[type="text"],
+.ui-dialog input[type="password"],
+.ui-dialog input[type="select"],
+.ui-dialog input[type="checkbox"],
+.ui-dialog textarea {
+  margin: 0px;
+}
+
+/* .k-grid-content {
+    background-color: #bbbbbb;
+} */
+
+.k-grid-content > table tr {
+  background-color: #ffffff;
+}
+
+.k-alt {
+  background-color: var(--geeks-lightGray) !important;
+}
+
+.k-alt2 {
+  background-color: #6eb6e3 !important;
+}
+
+.k-state-selected {
+  background-color: #003fff !important;
+}
+
+.k-grid table > tbody[role="rowgroup"] > tr {
+  white-space: nowrap;
+}
+
+.k-grid-filter {
+  width: auto !important;
+}
+
+.k-grid-toolbar {
+  height: 29px;
+  float: none !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.k-icon.k-i-excel {
+  background-position: -112px -272px !important;
+}
+
+.k-grid-layout > span {
+  background-position: -64px 0 !important;
+  margin-right: 0.3rem;
+  margin-left: -0.3rem;
+  background-image: url("../../Plugins/kendo/Silver/sprite.png");
+  border-color: transparent;
+  opacity: 0.9;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+#nomeSistema,
+#nomeCliente {
+  align-items: center;
+  color: var(--geeks-darkGray);
+  display: flex;
+  float: left;
+  font-size: 12px;
+  height: 60px;
+  margin-right: 20px;
+  transition: color 250ms;
+}
+
+#nomeSistema:hover,
+#nomeCliente:hover {
+  color: var(--geeks-primary);
+}
+
+#nomeSistema span,
+#nomeCliente span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.mainNav #nomeSistema,
+.mainNav #nomeCliente {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 0px) {
+  .topNav #nomeSistema,
+  .topNav #nomeCliente {
+    display: none;
+  }
+
+  .mainNav #nomeSistema,
+  .mainNav #nomeCliente {
+    display: block;
+  }
+}
+
+.leftUser {
+  position: absolute !important;
+  top: 60px !important;
+  left: 0px !important;
+  background: url("/Content/Plugins/Aquincum/images/elements/other/dropTopArrow.png")
+    8px 0px no-repeat !important;
+  padding-top: 5px;
+  width: initial !important;
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: "liga";
+  }
+}
+
+.ui-state-highlight {
+  border: 1px solid #a1a1a1 !important;
+  color: #000 !important;
+  font-weight: bold !important;
+  background-color: #dddddd !important;
+}
+
+.widget {
+  margin-top: 15px !important;
+}
+
+#top {
+  z-index: 998 !important;
+}
+
+#sidebar {
+  z-index: 997 !important;
+}
+
+div.uploader {
+  display: table-cell !important;
+}
+
+#content {
+  padding-bottom: 10px;
+}
+
+.k-grid-expand .k-icon,
+.k-grid-collapse .k-icon {
+  background-image: none !important;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.CodeMirror-hints,
+.CodeMirror-Tern-tooltip {
+  z-index: 10000 !important;
+}
+
+/* .subMenuLateral li {
+    height: 38px !important;
+}
+
+.subMenuLateral a {
+    line-height: 17px;
+    display: block;
+    height: 20px;
+}
+
+.subMenuLateral span {
+    margin-right: 10px !important;
+    display: inline-block;
+}
+
+.subMenuLateral ul {
+    position: absolute !important;
+    left: 170px !important;
+    top: 0px !important;
+} */
+
+.jGrowl {
+  margin-top: 60px !important;
+}
+
+.k-grid-footer {
+  background-color: #f3f3f4 !important;
+}
+
+.k-group-footer td {
+  background-color: #f3f3f4 !important;
+}
+
+.k-grid-footer td {
+  background-color: #f3f3f4 !important;
+  border-color: #f3f3f4 !important;
+}
+
+.k-grid td {
+  white-space: nowrap;
+}
+
+/* Material Icons */
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
