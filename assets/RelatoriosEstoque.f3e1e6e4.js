@@ -1,1 +1,0 @@
-import{_ as e,o,d as t}from"./index.094a6fb0.js";const s={components:{},data(){return{data:""}}},a={class:"estoque row"};function r(c,n,_,d,p,u){return o(),t("div",a,"estoque")}var f=e(s,[["render",r]]);export{f as default};
