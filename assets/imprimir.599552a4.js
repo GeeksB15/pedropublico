@@ -1,1 +1,0 @@
-import{b as n,aI as s,aJ as b}from"./index.88955961.js";var f=n(({app:r,router:e})=>{const o=function(l,i,m){i=i?typeof i=="object"?s.encodeToUrl(JSON.stringify(i)):s.encodeToUrl(i):"",b(m),e.push({name:"Imprimir",params:{nome:l,parametro:i}})};r.config.globalProperties.$imprimir=o,globalThis.$imprimir=o});export{f as default};
