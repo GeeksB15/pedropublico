@@ -1,1 +1,0 @@
-import{_ as a,o,n as s}from"./index.9b156bba.js";const t={components:{},data(){return{data:""}}},e={class:"fiscal row"};function c(r,n,_,i,l,p){return o(),s("div",e,"fiscal")}var f=a(t,[["render",c]]);export{f as default};
