@@ -1,0 +1,1 @@
+import{b as l,aI as o}from"./index.129a5639.js";var e=l(({app:a})=>{a.config.globalProperties.$lodash=o,globalThis.$lodash=o,a.config.globalProperties.$get=o.get,globalThis.$get=o.get});export{e as default};
